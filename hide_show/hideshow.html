@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide Show</title>
+  </head>
+  <body>
+    <main>
+      <h3 id="titleHeading">DONT CLICK THIS TEXT</h3>
+      <p id="detailsParagraph" style="display: none">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis blanditiis, dolores enim ex assumenda maxime
+        ipsum laudantium cupiditate fuga aliquam rem beatae aspernatur nam placeat tempora, labore eveniet repellat
+        impedit tempore! Voluptate a et veritatis corrupti, nisi quam amet cum earum sint quaerat inventore. Voluptate
+        dolorum corrupti ab exercitationem vero voluptatibus dicta et, ea aperiam enim provident explicabo hic, sint aut
+        accusantium? Fuga tempore quas, minima repellendus ad ut numquam odio minus beatae inventore animi sint ratione
+        quae odit ullam, amet vero accusamus et fugit culpa reprehenderit vel est. Mollitia ratione libero ea dolores
+        esse rerum veniam nulla quidem tenetur?
+      </p>
+    </main>
+
+    <script>
+      const title = document.getElementById("titleHeading");
+      const paragraph = document.getElementById("detailsParagraph");
+
+      function toggleParagraph() {
+        let display = paragraph.style.display;
+        if (display == "none") {
+          paragraph.style.display = "block";
+        } else {
+          paragraph.style.display = "none";
+        }
+      }
+
+      titleHeading.onclick = toggleParagraph;
+    </script>
+  </body>
+</html>
